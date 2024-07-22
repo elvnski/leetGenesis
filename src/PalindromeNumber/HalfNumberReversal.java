@@ -9,7 +9,7 @@ public class HalfNumberReversal {
         int reversed = 0;
         int original = x;
 
-        //whenever the original number is greater than the reversed number it means we have reversed at least
+        // whenever the reversed number is greater than the reversed number it means we have reversed at least
         // half the original number
         while (x > reversed){
 
