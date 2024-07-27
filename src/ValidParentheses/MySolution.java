@@ -19,13 +19,9 @@ public class MySolution {
 
             if (s.charAt(k) == '(' || s.charAt(k) == '{' || s.charAt(k) == '[') bracketStack.push(s.charAt(k));
 
-            else {
-
-                if (bracketStack.isEmpty()) return false;
-
-                if (bracketStack.peek() == closingBrackets.get(s.charAt(k))) bracketStack.pop();
-                else return false;
-            }
+            if (bracketStack.isEmpty()) return false;
+            else if (bracketStack.peek() == closingBrackets.get(s.charAt(k))) bracketStack.pop();
+            else return false;
         }
 
         return bracketStack.isEmpty();

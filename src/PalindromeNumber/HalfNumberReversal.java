@@ -7,7 +7,6 @@ public class HalfNumberReversal {
         if(x < 0 || (x != 0 && x % 10 == 0)) return false;
 
         int reversed = 0;
-        int original = x;
 
         // whenever the reversed number is greater than the reversed number it means we have reversed at least
         // half the original number
@@ -17,7 +16,7 @@ public class HalfNumberReversal {
             x /= 10;
         }
 
-        // the second condition allows us to ignore the middle number in numners with an odd digits count
+        // the second condition allows us to ignore the middle digit in integers with an odd digits count
         return (x == reversed) || (x == reversed / 10);
     }
 
