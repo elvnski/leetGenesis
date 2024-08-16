@@ -46,7 +46,7 @@ public class Main {
         System.out.println("ListNode 2: " + listNode2.toString());
         System.out.println("Merged List: " + (new MySolution()).mergeTwoLists(listNode1, listNode2).toString());
 
-        
+
         System.out.println("\nLEETCODE #26: REMOVE DUPLICATES FROM SORTED ARRAY");
         int[] inputArray = new int[]{1,1,1,1,2,2,2,2,2,2,2,2,2,3};
         int[] nums = {
@@ -63,6 +63,15 @@ public class Main {
         };
         int[] nums2 = {1,2};
         System.out.println("K = " + new RemoveDuplicatesFromSortedArray.MySolution().removeDuplicates(nums));
+
+
+        System.out.println("\nLEETCODE #27: REMOVE ELEMENT");
+        int[] inputArray2 = new int[]{3,2,2,3};
+        int[] inputArray3 = new int[]{0,1,2,2,3,0,4,2};
+        int[] inputArray4 = new int[]{3,3};
+        System.out.println("K = " + new RemoveElement.MySolution().removeElement(inputArray3, 3));
+
+
 
     }
 }
