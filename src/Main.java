@@ -1,4 +1,5 @@
 import LongestCommonPrefix.LongestCommonPrefixSolutions;
+import MaximumDistanceInArrays.OptimizedSolution;
 import MergeTwoSortedLists.ListNode;
 import MergeTwoSortedLists.MySolution;
 import PalindromeNumber.PalindromeNumberSolutions;
@@ -8,7 +9,9 @@ import TwoSum.TwoPassHashTable;
 import TwoSum.TwoSumSolutions;
 import ValidParentheses.ValidParenthesesSolutions;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -72,6 +75,17 @@ public class Main {
         System.out.println("K = " + new RemoveElement.MySolution().removeElement(inputArray3, 3));
 
 
+        System.out.println("\nLEETCODE #624: MAXIMUM DISTANCE IN ARRAYS");
+        List<List<Integer>> listOfLists = new ArrayList<>();
 
+        List<Integer> list1 = Arrays.asList(1, 2, 3);
+        List<Integer> list2 = Arrays.asList(4, 5);
+        List<Integer> list3 = Arrays.asList(1, 2, 3);
+
+        listOfLists.add(list1);
+        listOfLists.add(list2);
+        listOfLists.add(list3);
+
+        System.out.println("Maximum distance in arrays is: " + new OptimizedSolution().maxDistance(listOfLists));
     }
 }
