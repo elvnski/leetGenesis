@@ -87,5 +87,17 @@ public class Main {
         listOfLists.add(list3);
 
         System.out.println("Maximum distance in arrays is: " + new OptimizedSolution().maxDistance(listOfLists));
+
+
+
+        System.out.println("\nLEETCODE #1937: MAXIMUM NUMBER OF POINTS WITH COST");
+
+        int[][] points = {
+                {5,2,1,2},
+                {2,1,5,2},
+                {5,5,5,0}
+        };
+        System.out.println("\n\nMaximum Points Achievable: " + new MaximumNumberOfPointsWithCost.OptimizedSolution().maxPoints(points));  // Output should be 9
+
     }
 }
