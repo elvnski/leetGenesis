@@ -99,5 +99,14 @@ public class Main {
         };
         System.out.println("\n\nMaximum Points Achievable: " + new MaximumNumberOfPointsWithCost.OptimizedSolution().maxPoints(points));  // Output should be 9
 
+
+
+        System.out.println("\nLEETCODE #476: NUMBER COMPLEMENT");
+
+        int num = 234;
+        System.out.println("Finding Number Complement of: " + num);
+        System.out.println("My Solution's Complement: " + new NumberComplement.MySolution().findComplement(num));
+        System.out.println("Optimized Solution's Complement: " + new NumberComplement.OptimizedSolution().findComplement(num));
+
     }
 }
