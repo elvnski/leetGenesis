@@ -2,6 +2,8 @@ import LongestCommonPrefix.LongestCommonPrefixSolutions;
 import MaximumDistanceInArrays.OptimizedSolution;
 import MergeTwoSortedLists.ListNode;
 import MergeTwoSortedLists.MySolution;
+import NaryTreePostorderTraversal.Node;
+import NaryTreePostorderTraversal.RecursiveSolution;
 import PalindromeNumber.PalindromeNumberSolutions;
 import RomanToInteger.RomanToIntegerSolutions;
 import TwoSum.BruteForce;
@@ -107,6 +109,22 @@ public class Main {
         System.out.println("Finding Number Complement of: " + num);
         System.out.println("My Solution's Complement: " + new NumberComplement.MySolution().findComplement(num));
         System.out.println("Optimized Solution's Complement: " + new NumberComplement.OptimizedSolution().findComplement(num));
+
+
+        System.out.println("\nLEETCODE #590: N-ARY TREE POSTORDER TRAVERSAL");
+
+        Node node5 = new Node(5);
+        Node node6 = new Node(6);
+
+        Node node3 = new Node(3, Arrays.asList(node5, node6));
+
+        Node node2 = new Node(2);
+        Node node4 = new Node(4);
+
+        Node root = new Node(1, Arrays.asList(node3, node2, node4));
+
+        System.out.println("root : " + root.toString());
+        System.out.println("Postorder Traversal: " + new RecursiveSolution().postorder(root));
 
     }
 }
