@@ -1,13 +1,10 @@
 import LongestCommonPrefix.LongestCommonPrefixSolutions;
-import MaximumDistanceInArrays.OptimizedSolution;
 import MergeTwoSortedLists.ListNode;
 import MergeTwoSortedLists.MySolution;
 import NaryTreePostorderTraversal.Node;
-import NaryTreePostorderTraversal.RecursiveSolution;
+import NaryTreePostorderTraversal.OptimizedSolution;
 import PalindromeNumber.PalindromeNumberSolutions;
 import RomanToInteger.RomanToIntegerSolutions;
-import TwoSum.BruteForce;
-import TwoSum.TwoPassHashTable;
 import TwoSum.TwoSumSolutions;
 import ValidParentheses.ValidParenthesesSolutions;
 
@@ -88,7 +85,7 @@ public class Main {
         listOfLists.add(list2);
         listOfLists.add(list3);
 
-        System.out.println("Maximum distance in arrays is: " + new OptimizedSolution().maxDistance(listOfLists));
+        System.out.println("Maximum distance in arrays is: " + new MaximumDistanceInArrays.OptimizedSolution().maxDistance(listOfLists));
 
 
 
@@ -124,7 +121,36 @@ public class Main {
         Node root = new Node(1, Arrays.asList(node3, node2, node4));
 
         System.out.println("root : " + root.toString());
-        System.out.println("Postorder Traversal: " + new RecursiveSolution().postorder(root));
+        System.out.println("Postorder Traversal: " + new OptimizedSolution().postorder(root));
+
+
+
+
+        System.out.println("\nLEETCODE #1514: PATH WITH MAXIMUM PROBABILITY");
+
+        int n = 10;
+        int[][] edges = {
+                {0, 1}, {0, 2}, {0, 3}, {1, 4}, {2, 4},
+                {3, 5}, {4, 6}, {5, 6}, {4, 7}, {6, 8},
+                {7, 8}, {8, 9}, {1, 9}, {3, 9}, {2, 8},
+                {4, 5}, {5, 7}, {2, 7}, {3, 6}, {6, 9}
+        };
+        double[] succProb = {
+                0.5, 0.4, 0.3, 0.6, 0.7,
+                0.2, 0.9, 0.8, 0.5, 0.3,
+                0.4, 0.6, 0.1, 0.7, 0.5,
+                0.9, 0.2, 0.6, 0.3, 0.8
+        };
+        int start_node = 0;
+        int end_node = 9;
+
+        System.out.println("Djisktra's Algorithm");
+        System.out.println("Maximum Probability for path " + start_node + " -> " + end_node + ": " + new PathWithMaximumProbability.DjisktrasAlgorithmSolution().maxProbability(n, edges, succProb, start_node, end_node));
+
+        System.out.println("\nBellman-Ford Algorithm");
+        System.out.println("Maximum Probability for path " + start_node + " -> " + end_node + ": " + new PathWithMaximumProbability.BellmanFordAlgorithmSolution().maxProbability(n, edges, succProb, start_node, end_node));
+
+
 
     }
 }
