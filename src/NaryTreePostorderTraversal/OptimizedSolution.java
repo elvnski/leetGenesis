@@ -3,7 +3,7 @@ package NaryTreePostorderTraversal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecursiveSolution {
+public class OptimizedSolution {
 
     public List<Integer> postorder(Node root) {
 
