@@ -152,5 +152,12 @@ public class Main {
 
 
 
+
+        System.out.println("\nLEETCODE #1945: SUM OF DIGITS OF STRING AFTER CONVERT");
+
+        System.out.println("\nMy Solution: " + new SumOfDigitsOfStringAfterConvert.MySolution().getLucky("zbax", 2));
+        System.out.println("Optimized Solution: " + new SumOfDigitsOfStringAfterConvert.OptimizedSolution().getLucky("", 2));
+
+
     }
 }
