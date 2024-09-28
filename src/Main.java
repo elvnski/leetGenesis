@@ -163,8 +163,6 @@ public class Main {
 
 
         System.out.println("\nLEETCODE #226: INVERT BINARY TREE");
-        System.out.println("\nLEETCODE #226: Invert Binary Tree");
-
         TreeNode tree = new TreeNode(4,
                 new TreeNode(2,
                     new TreeNode(1), new TreeNode(3)),
@@ -173,5 +171,17 @@ public class Main {
         );
 
         System.out.println("Inverted tree: \n" + new InvertBinaryTree.OptimizedSolution().invertTree(tree));
+
+
+        System.out.println("\nLEETCODE #420: STRONG PASSWORD CHECKER");
+        
+        String password = "iojqw93121rrrrreiA";
+        System.out.println("Checking [password]: " + password);
+
+        System.out.println("Minimum Steps: " + new StrongPasswordChecker.OptimizedSolution().strongPasswordChecker(password));
+
+        System.out.println("\n------- VERBOSE -------\n");
+        new StrongPasswordChecker.OptimizedSolution().strongPasswordCheckerVerbose(password);
+
     }
 }
