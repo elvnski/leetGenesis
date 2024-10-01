@@ -174,7 +174,7 @@ public class Main {
 
 
         System.out.println("\nLEETCODE #420: STRONG PASSWORD CHECKER");
-        
+
         String password = "iojqw93121rrrrreiA";
         System.out.println("Checking [password]: " + password);
 
