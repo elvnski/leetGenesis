@@ -2,6 +2,7 @@ import InvertBinaryTree.TreeNode;
 import LongestCommonPrefix.LongestCommonPrefixSolutions;
 import MergeTwoSortedLists.ListNode;
 import MergeTwoSortedLists.MySolution;
+import MyCalendarTwo.MyCalendarTwo;
 import NaryTreePostorderTraversal.Node;
 import NaryTreePostorderTraversal.OptimizedSolution;
 import PalindromeNumber.PalindromeNumberSolutions;
@@ -10,9 +11,7 @@ import TwoSum.TwoSumSolutions;
 import ValidParentheses.ValidParenthesesSolutions;
 import com.sun.source.tree.Tree;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -183,5 +182,19 @@ public class Main {
         System.out.println("\n------- VERBOSE -------\n");
         new StrongPasswordChecker.OptimizedSolution().strongPasswordCheckerVerbose(password);
 
+
+
+        System.out.println("\nLEETCODE #731: MY CALENDAR II");
+
+        int[][] bookingDates = {{10,20},{50,60},{10,40},{5,15},{5,10},{25,55}};
+
+        MyCalendarTwo myCalendarTwo = new MyCalendarTwo();
+        for(int[] date : bookingDates) System.out.println("BOOKING [" + date[0] + ',' + date[1] + "]? " + myCalendarTwo.book(date[0], date[1]));
+
+        MyCalendarTwo myCalendarTwoVerbose = new MyCalendarTwo();
+        System.out.println("\n\n----------- VERBOSE OUTPUT -----------");
+        for(int[] date : bookingDates) System.out.println("\nBOOKING [" + date[0] + ',' + date[1] + "]? " + myCalendarTwoVerbose.bookVerbose(date[0], date[1]) + "\n\n*** *** ***\n");
+
+//        System.out.println(myCalendarTwo.toString());
     }
 }
