@@ -195,6 +195,15 @@ public class Main {
         System.out.println("\n\n----------- VERBOSE OUTPUT -----------");
         for(int[] date : bookingDates) System.out.println("\nBOOKING [" + date[0] + ',' + date[1] + "]? " + myCalendarTwoVerbose.bookVerbose(date[0], date[1]) + "\n\n*** *** ***\n");
 
-//        System.out.println(myCalendarTwo.toString());
+
+
+        System.out.println("\nLEETCODE #1331: RANK TRANSFORM OF AN ARRAY");
+
+        int[] originalArray = new int[]{40,10,20,30};
+        int[] rankArray = new RankTransformOfAnArray.MySolution().arrayRankTransform(originalArray);
+
+        System.out.println(Arrays.toString(originalArray));
+        System.out.println(Arrays.toString(rankArray));
+
     }
 }
