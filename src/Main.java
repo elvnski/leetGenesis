@@ -281,7 +281,12 @@ public class Main {
         System.out.println("\nIs it Possible: " + addEdgesToMakeDegreesOfAllNodesEven);
 
 
+        System.out.println("\n\nLEETCODE #2508: MINIMUM STRING LENGTH AFTER REMOVING SUBSTRINGS");
 
+        System.out.println("Minimum String Length After Removing Substrings: " + new MinimumStringLengthAfterRemovingSubStrings.MySolution().minLength("ABFCACDB"));
+
+        System.out.println("\n\n----------------- MINLENGTH VERBOSE -----------------");
+        System.out.println("Minimum String Length After Removing Substrings: " + new MinimumStringLengthAfterRemovingSubStrings.OptimizedSolution().minLengthVerbose("ABFCACDB"));
 
     }
 }
