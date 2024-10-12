@@ -9,9 +9,7 @@ import PalindromeNumber.PalindromeNumberSolutions;
 import RomanToInteger.RomanToIntegerSolutions;
 import TwoSum.TwoSumSolutions;
 import ValidParentheses.ValidParenthesesSolutions;
-import com.sun.source.tree.Tree;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class Main {
@@ -292,7 +290,6 @@ public class Main {
 
 
         System.out.println("\n\nLEETCODE #1590: MAKE SUM DIVISIBLE BY P");
-        System.out.println("\n\nLEETCODE #1590: Make Sum Divisible By P");
 
         int[] numsArray = new int[]{6,3,5,2};
         int p = 9;
@@ -301,5 +298,9 @@ public class Main {
         System.out.println("OPTIMIZED SOLUTION \nSub Array Length needed to Make Sum Divisible by P: " + new MakeSumDivisibleByP.OptimizedSolution().minSubarray(numsArray, p));
 
 
+        System.out.println("\n\nLEETCODE #217: CONTAINS DUPLICATE");
+        int[] numsArray2 = new int[]{1,1,1,3,3,4,3,2,4,2};
+
+        System.out.println("Contains Duplicate? : " + new ContainsDuplicate.MySolution().containsDuplicate(numsArray2));
     }
 }
