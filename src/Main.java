@@ -310,5 +310,10 @@ public class Main {
         String s = "rat", t = "car";
         System.out.println("Valid Anagram [" + s + ", " + t + "]? " + new ValidAnagram.MySolution().isAnagram(s, t));
 
+
+        System.out.println("\n\nLEETCODE #49: GROUP ANAGRAMS");
+
+        String[] strs = new String[]{"a"};
+        System.out.println("Group Anagrams: " + new GroupAnagrams.MySolution().groupAnagrams(strs));
     }
 }
