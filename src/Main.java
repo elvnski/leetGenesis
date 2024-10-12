@@ -11,6 +11,7 @@ import TwoSum.TwoSumSolutions;
 import ValidParentheses.ValidParenthesesSolutions;
 import com.sun.source.tree.Tree;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class Main {
@@ -287,6 +288,18 @@ public class Main {
 
         System.out.println("\n\n----------------- MINLENGTH VERBOSE -----------------");
         System.out.println("Minimum String Length After Removing Substrings: " + new MinimumStringLengthAfterRemovingSubStrings.OptimizedSolution().minLengthVerbose("ABFCACDB"));
+
+
+
+        System.out.println("\n\nLEETCODE #1590: MAKE SUM DIVISIBLE BY P");
+        System.out.println("\n\nLEETCODE #1590: Make Sum Divisible By P");
+
+        int[] numsArray = new int[]{6,3,5,2};
+        int p = 9;
+        System.out.println("MY SOLUTION \nSub Array Length needed to Make Sum Divisible by P: " + new MakeSumDivisibleByP.MySolution().minSubarray(numsArray, p));
+
+        System.out.println("OPTIMIZED SOLUTION \nSub Array Length needed to Make Sum Divisible by P: " + new MakeSumDivisibleByP.OptimizedSolution().minSubarray(numsArray, p));
+
 
     }
 }
