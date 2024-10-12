@@ -302,5 +302,13 @@ public class Main {
         int[] numsArray2 = new int[]{1,1,1,3,3,4,3,2,4,2};
 
         System.out.println("Contains Duplicate? : " + new ContainsDuplicate.MySolution().containsDuplicate(numsArray2));
+
+
+
+        System.out.println("\n\nLEETCODE #242: VALID ANAGRAM");
+
+        String s = "rat", t = "car";
+        System.out.println("Valid Anagram [" + s + ", " + t + "]? " + new ValidAnagram.MySolution().isAnagram(s, t));
+
     }
 }
