@@ -1,10 +1,12 @@
 package MinimumStringLengthAfterRemovingSubStrings;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Stack;
 
 public class OptimizedSolution {
 
-    public int minLength(String s) {
+    public int minLength(@NotNull String s) {
 
         Stack<Character> pureStack = new Stack<>();
 
@@ -25,7 +27,7 @@ public class OptimizedSolution {
     }
 
 
-    public int minLengthVerbose(String s) {
+    public int minLengthVerbose(@NotNull String s) {
 
         Stack<Character> pureStack = new Stack<>();
 

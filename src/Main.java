@@ -315,5 +315,16 @@ public class Main {
 
         String[] strs = new String[]{"a"};
         System.out.println("Group Anagrams: " + new GroupAnagrams.MySolution().groupAnagrams(strs));
+
+
+
+        System.out.println("\n\nLEETCODE #347: TOP K FREQUENT ELEMENTS");
+
+        int[] elements = new int[]{1,1,1,2,2,3};
+        int topK = 2;
+
+        System.out.println("Top K frequent elements: " + Arrays.toString(new TopKFrequentElements.OptimizedSolution().topKFrequent(elements, topK)));
+
+
     }
 }
