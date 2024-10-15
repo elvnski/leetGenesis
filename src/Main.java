@@ -326,5 +326,14 @@ public class Main {
         System.out.println("Top K frequent elements: " + Arrays.toString(new TopKFrequentElements.OptimizedSolution().topKFrequent(elements, topK)));
 
 
+
+        System.out.println("\n\nLEETCODE #271: Encode and Decode Strings");
+
+        String[] input = new String[]{""};
+
+        String encoded = new EncodeAndDecodeStrings.MySolution().encode(List.of(input));
+        System.out.println("Encoded: " + encoded);
+        System.out.println("Decoded: " + new EncodeAndDecodeStrings.MySolution().decode(encoded));
+
     }
 }
