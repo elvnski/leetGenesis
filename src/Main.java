@@ -335,5 +335,13 @@ public class Main {
         System.out.println("Encoded: " + encoded);
         System.out.println("Decoded: " + new EncodeAndDecodeStrings.MySolution().decode(encoded));
 
+
+        System.out.println("\n\nLEETCODE #238: Product of Array Except Self");
+
+        int[] nums3 = new int[]{-1,1,0,-3,3};
+
+        System.out.println("Product Array: " + Arrays.toString(new ProductOfArrayExceptSelf.MySolution().productExceptSelf(nums3)));
+        System.out.println("[Optimized] Product Array: " + Arrays.toString(new ProductOfArrayExceptSelf.OptimizedSolution().productExceptSelf(nums3)));
+
     }
 }
