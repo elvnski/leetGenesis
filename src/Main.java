@@ -343,5 +343,23 @@ public class Main {
         System.out.println("Product Array: " + Arrays.toString(new ProductOfArrayExceptSelf.MySolution().productExceptSelf(nums3)));
         System.out.println("[Optimized] Product Array: " + Arrays.toString(new ProductOfArrayExceptSelf.OptimizedSolution().productExceptSelf(nums3)));
 
+
+
+        System.out.println("\n\nLEETCODE #36: Valid Sudoku");
+
+        char[][] sudokuBoard = new char[][]{
+            {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
+            {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+            {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+            {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+            {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+            {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+            {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+            {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+            {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+        };
+
+        System.out.println("Valid Sudoku: " + new ValidSudoku.OptimizedSolution().isValidSudoku(sudokuBoard));
+
     }
 }
