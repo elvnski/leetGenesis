@@ -361,5 +361,12 @@ public class Main {
 
         System.out.println("Valid Sudoku: " + new ValidSudoku.OptimizedSolution().isValidSudoku(sudokuBoard));
 
+
+
+        System.out.println("\n\nLEETCODE #128: Longest Consecutive Sequence");
+
+        int[] sequenceArray = new int[]{0,3,7,2,5,8,4,6,0,1};
+        System.out.println("Longest Consecutive Sequence: " + new LongestConsecutiveSequence.OptimizedSolution().longestConsecutive(sequenceArray));
+
     }
 }
