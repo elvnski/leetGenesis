@@ -368,5 +368,11 @@ public class Main {
         int[] sequenceArray = new int[]{0,3,7,2,5,8,4,6,0,1};
         System.out.println("Longest Consecutive Sequence: " + new LongestConsecutiveSequence.OptimizedSolution().longestConsecutive(sequenceArray));
 
+
+        System.out.println("\n\nLEETCODE #125: Valid Palindrome");
+
+        System.out.println("Valid Palindrome?: " + new ValidPalindrome.MySolution().isPalindrome("0P"));
+        System.out.println("[OPTIMIZED] Valid Palindrome?: " + new ValidPalindrome.OptimizedSolution().isPalindrome("0P"));
+
     }
 }
