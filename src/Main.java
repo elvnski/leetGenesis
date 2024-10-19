@@ -374,5 +374,17 @@ public class Main {
         System.out.println("Valid Palindrome?: " + new ValidPalindrome.MySolution().isPalindrome("0P"));
         System.out.println("[OPTIMIZED] Valid Palindrome?: " + new ValidPalindrome.OptimizedSolution().isPalindrome("0P"));
 
+
+
+        System.out.println("\n\nLEETCODE #15: 3Sum");
+
+        int[] nums4 = new int[]{-1,0,1,2,-1,-4};
+
+        System.out.println("3Sum: " + new ThreeSum.OptimizedSolution().threeSum(nums4));
+
+
+
+
+
     }
 }
