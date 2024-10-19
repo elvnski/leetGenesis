@@ -384,7 +384,13 @@ public class Main {
 
 
 
+        System.out.println("\n\nLEETCODE #11: Container With Most Water");
 
+        int[] height = new int[]{4, 3, 2, 1, 4};
 
+        System.out.println("Container With Most Water: " + new ContainerWithMostWater.MySolution().maxArea(height));
+
+        System.out.println("\n----------------- VERBOSE -----------------");
+        System.out.println("\nContainer With Most Water: " + new ContainerWithMostWater.MySolution().maxAreaVerbose(height));
     }
 }
