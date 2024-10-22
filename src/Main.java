@@ -392,5 +392,14 @@ public class Main {
 
         System.out.println("\n----------------- VERBOSE -----------------");
         System.out.println("\nContainer With Most Water: " + new ContainerWithMostWater.MySolution().maxAreaVerbose(height));
+
+
+        System.out.println("\n\nLEETCODE #121: Best Time to Buy and Sell Stock");
+
+        int[] prices = new int[]{7,1,5,3,6,4};
+
+        System.out.println("Selling Range: " + Arrays.toString(prices));
+        System.out.println("\nMaximum Stock Profit: " + new BestTimeToBuyAndSellStock.MySolution().maxProfit(prices));
+
     }
 }
