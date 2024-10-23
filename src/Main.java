@@ -401,5 +401,21 @@ public class Main {
         System.out.println("Selling Range: " + Arrays.toString(prices));
         System.out.println("\nMaximum Stock Profit: " + new BestTimeToBuyAndSellStock.MySolution().maxProfit(prices));
 
+
+
+        System.out.println("\n\nLEETCODE #3: Longest Substring Without Repeating Characters");
+
+        String s4 = "abcabcbb";
+        System.out.println("STRING: " + s4);
+
+        System.out.println("[My Solution] Longest Unique Substring: " + new LongestSubstringWithoutRepeatingCharacters.MySolution().lengthOfLongestSubstring(s4));
+
+        System.out.println("[Optimized Solution] Longest Unique Substring: " + new LongestSubstringWithoutRepeatingCharacters.OptimizedSolution().lengthOfLongestSubstring(s4));
+
+        System.out.println("\n----------------- VERBOSE -----------------");
+        System.out.println("STRING: " + s4);
+        System.out.println("[Optimized Solution] Longest Unique Substring: " + new LongestSubstringWithoutRepeatingCharacters.OptimizedSolution().lengthOfLongestSubstringVerbose(s4));
+
+
     }
 }
