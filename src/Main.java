@@ -417,5 +417,13 @@ public class Main {
         System.out.println("[Optimized Solution] Longest Unique Substring: " + new LongestSubstringWithoutRepeatingCharacters.OptimizedSolution().lengthOfLongestSubstringVerbose(s4));
 
 
+
+        System.out.println("\n\nLEETCODE #424: Longest Repeating Character Replacement");
+
+        String s5 = "AABABBA";
+        int k2 = 1;
+        System.out.println("Longest Repeating Character with " + k2 + " Replacement(s): " + new LongestRepeatingCharacterReplacement.MySolution().characterReplacement(s5, k2));
+
+
     }
 }
