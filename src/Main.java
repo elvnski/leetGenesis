@@ -425,5 +425,12 @@ public class Main {
         System.out.println("Longest Repeating Character with " + k2 + " Replacement(s): " + new LongestRepeatingCharacterReplacement.MySolution().characterReplacement(s5, k2));
 
 
+
+        System.out.println("\n\nLEETCODE #76. Minimum Window Substring");
+        String s6 = "ADOBECODEBANC", t6 = "ABC";
+
+        System.out.println("Min Window Substring: " + new MinimumWindowSubstring.MySolution().minWindow(s6, t6));
+
+
     }
 }
